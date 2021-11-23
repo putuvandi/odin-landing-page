@@ -13,6 +13,101 @@ body {
 
 .header .header-logo {
     font-weight: bold;
+    font-size: 24px;
+}
+
+.container {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    background-color: #1F2937;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+    padding: 64px;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    max-height: 250px;
+}
+
+.hero-left-title {
+    color: #F9FAF8;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.hero-left-desc {
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+.hero-right {
+    width: 500px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    color: #E5E7EB;
+}
+
+.hero-right-img {
+    background-color: gray;
+    color: #E5E7EB;
+    
+    margin: 0;
+}
+
+.informations {
+    margin-top: 24px;
+    margin-bottom: 56px;
+}
+
+.information-title {
+    text-align: center;
+    font: normal normal bold 36px 'Roboto', sans-serif;
+    margin-bottom: 24px;
+}
+
+.information-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    /*border: 2px solid #3882F6;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-img {
+    width: 150px;
+    height: 150px;
+    border: 4px solid #3882F6;
+    border-radius: 8px;
+}
+
+.card-desc {
+    color: rgb(104, 103, 103);
 }
 
 ul {
@@ -39,26 +134,34 @@ a {
     padding-right: 56px;
 }
 
-.action-area, .sign-up {
-    background-color: #3882F6;
-    color: white;  
-    font-size: 24px;
+.wraper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .action-area {
+    background-color: #3882F6;
+    color: white;  
+    font-size: 24px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     height: 200px;
-    max-width: 1200px;
+    width: 1200px;
     border-radius: 10px;
     margin-top: 80px;
     margin-bottom: 80px
 }
 
-.sign-up {
-    border-radius: 10px;
-    padding: 8px 32px;
+button {
+    border-radius: 8px;
+    padding: 8px 24px;
+    width: 120px;
+    background-color: #3882F6;
+    color: white;
+    font-size: 18px;
 }
 
 .action-texts .action-text-1 {
